@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: monsterret;
+            background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );
+            /*background-image: url('city-lights-wallpaper.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;*/
+            
+        }
+        form{
+            font-family: Arial, Helvetica, sans-serif, bold;
+            
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+            border: 20px rigid black;
+            margin-top: 7%;
+            margin-left: 25%;
+            margin-right: 25%;
+            border-radius: 20px;  
+
+        }
+        h1{
+            font-style: italic;
+            font-weight: 1000;
+            color: white;
+            letter-spacing: 10px;
+            text-shadow: 2px 2px black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+        label{
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 10%;
+            color: white;
+            text-shadow: 1px 1px black;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        input{
+            
+            width: 80%;
+            margin: 2% 9%;
+            margin-bottom: 5%;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+        button{
+            padding: 10px;
+            width: 45%;  
+            margin-top: 2%;
+            margin-left: 27%;
+            margin-right: 27%;
+            margin-bottom: 10%;
+            color: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );;
+            font-size: larger;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        ::-webkit-input-placeholder{
+            color: white;
+            opacity: 0.5;
+            transition: opacity .1s ease-in-out;
+        }
+        :focus::-webkit-input-placeholder{
+            opacity: 0;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="center">
+    
+        <form action="/register" method="post">
+         <div class="form_page">
+             
+             <h1><center> REGISTER </center></h1>
+     
+             <div class="elements">
+                 <label for="uname" class="ipfield">Username </label><br>
+                 <input type="text" name="name" id="uname" required placeholder="Enter Username"><br>
+             </div>
+     
+             <!--<div class="elements">
+                 <label for="usermail">Email </label><br>
+                 <input type="email" name="email" id="usermail" required placeholder="Enter Email"><br>
+             </div>-->
+     
+             <div class="elements">
+                 <label for="userpass">password </label><br>
+                 <input type="password" name="password" id="userpass" required placeholder="Enter Password"><br>
+             </div>
+     
+             <button>Register</button>
+         </div>
+        </form>             
+         
+     </div>
+     
+</body>
+</html>
